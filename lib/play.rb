@@ -31,7 +31,7 @@ def turn(board)
 end
 
 def play(board)
-  until board[0..8] == Array.new(9, "X"||"O") do 
+  while board.include?(" ")
     turn(board)
   end
 end
