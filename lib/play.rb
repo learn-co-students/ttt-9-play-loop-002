@@ -30,4 +30,8 @@ def turn(board)
   display_board(board)
 end
 
-# Define your play method below
+def play(board)
+  until board[0..8] == Array.new(9, "X"||"O") do 
+    turn(board)
+  end
+end
