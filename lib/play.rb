@@ -31,7 +31,9 @@ def turn(board)
 end
 
 def play(board)
-  while board.include?(" ")
+  count = 0
+  while count < 9
     turn(board)
+    count += 1
   end
 end
