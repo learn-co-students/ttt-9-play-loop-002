@@ -34,11 +34,11 @@ end
 # Define your play method below
 def play(board)
 
-i = 1 
-  while 1 < 9 
+
+  while true 
     turn(board)
     i += 1 
-    break if i == 10
+    break if board.include(" ") == false 
   end
    
 
