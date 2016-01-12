@@ -33,14 +33,10 @@ end
 
 # Define your play method below
 def play(board)
-
-
-  while true 
-    turn(board)
-    i += 1 
-    break if board.include(" ") == false 
-  end
-   
-
+  counter = 0 
+    while counter < 9  
+      turn(board)
+      counter += 1 
+    end
 end
  
