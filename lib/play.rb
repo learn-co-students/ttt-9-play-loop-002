@@ -31,3 +31,10 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+  c = 0
+  while c<=8
+    turn(board)
+    c+=1
+  end
+end
