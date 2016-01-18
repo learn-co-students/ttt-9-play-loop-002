@@ -12,7 +12,7 @@ def move(board, location, current_player = "X")
 end
 
 def position_taken?(board, location)
-  board[location] != " " && board[location] != ""
+  board[location.to_i] != " " && board[location.to_i] != ""
 end
 
 def valid_move?(board, position)
@@ -31,3 +31,8 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+  9.times do
+    turn(board)
+  end
+end
