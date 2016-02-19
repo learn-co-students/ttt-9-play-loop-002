@@ -1,6 +1,6 @@
 def play(board)
-nr = 0
-while nr < 9
+nr = 1
+while nr < 10
   turn(board)
   nr += 1
 end
