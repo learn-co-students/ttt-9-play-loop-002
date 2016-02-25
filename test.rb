@@ -1,3 +1,9 @@
+primary_colors = ["Red", "Yellow", "Blue"]
+primary_colors.each do |bob|puts "Primary Color #{bob} is #{bob.length} letters long."
+end
+
+
+=begin
 def valid_move?(board, position)
   if (position < 1 || position > 9) || position_taken?(board, position-1)
     return false
@@ -13,7 +19,7 @@ valid_move?(board, input)
 
 
 
-=begin
+
 
 if "hello" > 1
   puts "is true"
