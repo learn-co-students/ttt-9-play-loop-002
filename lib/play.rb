@@ -30,4 +30,12 @@ def turn(board)
   display_board(board)
 end
 
-# Define your play method below
+def play(board)
+  count=0
+  while count < 9 do
+    turn(board)
+    count += 1
+  #must account for 9 finite loops
+  end
+end
+
